@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,IE=10" />
+
+    <title>基金信息导航</title>
+    <script type="text/javascript" src="js/1.8.3jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/laydate.css" />
+    <link rel="stylesheet" type="text/css" href="css/skins/default/laydate.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    
+</head>
+<body >
+<!-- 头部begin-->
+<div class="header">
+	<div class="clearfix header-con">
+    	<a class="fl logo" href="#" target="_blank"></a>
+    	<div class="fl header-ser">
+        	<form class="header-fm">
+            	<input class="header-inbox" type="text" autocomplete="off" value="请输入基金代码/名称/简拼/组合名称/要找的功能" />
+            	<span class="pa ico glass-ico"></span>
+            </form>
+            <div class="header-drop">
+            	<span class="pa ico shap-ico"></span>
+            	<div class="clearfix header-drop-con pl20 pr20 pt20">
+                	<div class="fl header-drop-box">
+                    	<div class="header-drop-item">
+                        	<span class="blue f16 header-drop-tit">功能</span>
+                            <ul class="header-drop-list clearfix f14">
+                            	<li><a href="#" target="_blank">基金排行榜</a></li>
+                                <li><a href="#" target="_blank">基金净值</a></li>
+                                <li><a href="#" target="_blank">基金评级</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-drop-item mt12">
+                        	<span class="blue f16 header-drop-tit">组合</span>
+                            <p class="header-ser-none f14">暂无含有您搜索条件的组合</p>
+                            <!--<ul class="header-drop-list clearfix f14">
+                            	<li><a href="#" target="_blank">基金排行榜</a></li>
+                                <li><a href="#" target="_blank">基金净值</a></li>
+                                <li><a href="#" target="_blank">基金评级</a></li>
+                            </ul>-->
+                        </div>
+                        <div class="header-drop-item mt12">
+                        	<span class="blue f16 header-drop-tit">基金</span>
+                            <ul class="header-drop-list clearfix f14">
+                            	<li><a href="#" target="_blank">华夏基金(000001)</a></li>
+                                <li><a href="#" target="_blank">南方稳利1年定期开放债券A(00086)</a></li>
+                                <li><a href="#" target="_blank">华商双债丰利债券(521522)</a></li>
+                                <li><a href="#" target="_blank">华夏基金(000001)</a></li>
+                                <li><a href="#" target="_blank">南方稳利1年定期开放债券A(00086)</a></li>
+                                <li><a href="#" target="_blank">华商双债丰利债券(521522)</a></li>
+                                <li><a href="#" target="_blank">华夏基金(000001)</a></li>
+                                <li><a href="#" target="_blank">南方稳利1年定期开放债券A(00086)</a></li>
+                                <li><a href="#" target="_blank">华商双债丰利债券(521522)</a></li>
+                                <li><a href="#" target="_blank">华商双债丰利债券(521522)</a></li>
+                            </ul>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="fr header-drop-box">
+                    	<div class="header-drop-item ">
+                        	<span class="blue f16 header-drop-tit">热门搜索</span>
+                            <ul class="header-drop-list clearfix f14">
+                            	<li><a href="#" target="_blank"><span>多基金对比</span>--<span class="header-drop-tp">功能</span></a></li>
+                                <li><a href="#" target="_blank"><span>最强回测</span>--<span class="header-drop-tp">功能</span></a></li>
+                                <li><a href="#" target="_blank"><span>基金评级</span>--<span class="header-drop-tp">功能</span></a></li>
+                                <li><a href="#" target="_blank"><span>平安享乐</span>--<span class="header-drop-tp">组合</span></a></li>
+                                <li><a href="#" target="_blank"><span>一路向前</span>--<span class="header-drop-tp">组合</span></a></li>
+                                <li><a href="#" target="_blank"><span>华夏基金(000001)</span>--<span class="header-drop-tp">组合</span></a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                
+                </div>
+            
+            </div>
+            
+        </div>
+        <div class="fr talk-us f14">
+        	<a class="db" href="#" target="_blank">
+            	<span class="dib ico talk-ico vm"></span>
+                <span class="dib vm">吐槽我们</span>
+            </a>  
+        </div>
+    </div>	
+</div>
+<div class="header-place"></div>
+<!--头部end!-->
+
+<!--主题部分begin-->
+<div class="main ">
+	<!--左边以及导航 begin-->
+    <div class="main-nav">
+    	<div class="nav-con">
+        	<div class="nav-inner">
+            	<div class="nav-tool"><span class="dib ico nav-tool-ico"></span></div>
+                <div class="nav-title"><span>基金信息</span></div>
+                <div class="nav-item ">
+                	<a class="db nav-home-link " href="#" target="_blank">
+                    	<div class="nav-tit f14 ">
+                        	<span class="dib ico tit-ico1 vm"></span>
+                            <span class="dib vm hover-text">返回首页</span>
+                        </div>
+                    
+                    </a>	
+                
+                </div>
+                <div class="nav-item ">
+                	<a class="db nav-home-link " href="#" target="_blank">
+                    	<div class="nav-tit f14 ">
+                        	<span class="dib ico tit-ico3 vm"></span>
+                            <span class="dib vm hover-text">基金要览</span>
+                        </div>
+                    
+                    </a>	
+                
+                </div>
+                <div class="nav-item  current">
+                    <div class="nav-tit-menu f14 show-drop">
+                        <span class="dib vm nav-tit-shap"><i class="dib ico tit-shap"></i></span>
+                        <span class="dib vm hover-text">基本资料</span>
+                    </div>
+                    <ul class="clearfix nav-menu-drop">
+                    	<li class="cur">
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico1 vm"></span>	
+                                <span class="dib vm hover-text">基金介绍</span>	
+                            </a>
+                        </li>
+                        <li >
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico2 vm"></span>	
+                                <span class="dib vm hover-text">基金经理</span>	
+                            </a>
+                        </li>
+                        <li>
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico3 vm"></span>	
+                                <span class="dib vm hover-text">基金公司</span>	
+                            </a>
+                        </li>
+                        <li>
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico4 vm"></span>	
+                                <span class="dib vm hover-text">风险揭示</span>	
+                            </a>
+                        </li>
+                        <li>
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico5 vm"></span>	
+                                <span class="dib vm hover-text">对冲关系</span>	
+                            </a>
+                        </li>
+                        
+                    </ul>
+
+                </div>
+                <div class="nav-item ">
+                    <div class="nav-tit-menu f14 ">
+                        <span class="dib vm nav-tit-shap"><i class="dib ico tit-shap"></i></span>
+                        <span class="dib vm hover-text">市场表现</span>
+                    </div>
+                    <ul class="clearfix nav-menu-drop">
+                    	<li >
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico6 vm"></span>	
+                                <span class="dib vm hover-text">每日基金净值</span>	
+                            </a>
+                        </li>
+                        <li >
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico7 vm"></span>	
+                                <span class="dib vm hover-text">重要衍生指标</span>	
+                            </a>
+                        </li>
+                        <li>
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico8 vm"></span>	
+                                <span class="dib vm hover-text">基金评级</span>	
+                            </a>
+                        </li>
+                        <li >
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico9 vm"></span>	
+                                <span class="dib vm hover-text">历史涨幅走势图</span>	
+                            </a>
+                        </li>
+                        <li>
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico10 vm"></span>	
+                                <span class="dib vm hover-text">分红拆分</span>	
+                            </a>
+                        </li>
+                       
+                    </ul>
+
+                </div>
+                <div class="nav-item ">
+                    <div class="nav-tit-menu f14 ">
+                        <span class="dib vm nav-tit-shap"><i class="dib ico tit-shap"></i></span>
+                        <span class="dib vm hover-text">购买信息</span>
+                    </div>
+                    <ul class="clearfix nav-menu-drop">
+                    	<li >
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico11 vm"></span>	
+                                <span class="dib vm hover-text">基金费率</span>	
+                            </a>
+                        </li>
+                        <li >
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico12 vm"></span>	
+                                <span class="dib vm hover-text">代销机构</span>	
+                            </a>
+                        </li>
+                       
+                    </ul>
+
+                </div>
+               
+                <div class="nav-item ">
+                    <div class="nav-tit-menu f14 ">
+                        <span class="dib vm nav-tit-shap"><i class="dib ico tit-shap"></i></span>
+                        <span class="dib vm hover-text">基金公告</span>
+                    </div>
+                    <ul class="clearfix nav-menu-drop">
+                    	<li>
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico13 vm"></span>	
+                                <span class="dib vm hover-text">全部公告</span>	
+                            </a>
+                        </li>
+                        <li >
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico14 vm"></span>	
+                                <span class="dib vm hover-text">发行公告</span>	
+                            </a>
+                        </li>
+                        <li >
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico15 vm"></span>	
+                                <span class="dib vm hover-text">分红公告</span>	
+                            </a>
+                        </li>
+                        <li >
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico16 vm"></span>	
+                                <span class="dib vm hover-text">定期报告</span>	
+                            </a>
+                        </li>
+                        <li >
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico17 vm"></span>	
+                                <span class="dib vm hover-text">人事调整</span>	
+                            </a>
+                        </li>
+                        <li >
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico18 vm"></span>	
+                                <span class="dib vm hover-text">基金销售</span>	
+                            </a>
+                        </li>
+                        <li >
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico19 vm"></span>	
+                                <span class="dib vm hover-text">其他公告</span>	
+                            </a>
+                        </li>
+                       
+                    </ul>
+
+                </div>
+                <div class="nav-item">
+                    <div class="nav-tit-menu f14 ">
+                        <span class="dib vm nav-tit-shap"><i class="dib ico tit-shap"></i></span>
+                        <span class="dib vm hover-text">基金持仓</span>
+                    </div>
+                    <ul class="clearfix nav-menu-drop">
+                    	<li >
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico20 vm"></span>	
+                                <span class="dib vm hover-text">最新持仓配置</span>	
+                            </a>
+                        </li>
+                        <li >
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico21 vm"></span>	
+                                <span class="dib vm hover-text">历史持仓走势</span>	
+                            </a>
+                        </li>
+                        <li >
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico22 vm"></span>	
+                                <span class="dib vm hover-text">行业配置</span>	
+                            </a>
+                        </li>
+                       
+                    </ul>
+
+                </div>
+                <div class="nav-item ">
+                    <div class="nav-tit-menu f14 ">
+                        <span class="dib vm nav-tit-shap"><i class="dib ico tit-shap"></i></span>
+                        <span class="dib vm hover-text">持有者结构</span>
+                    </div>
+                    <ul class="clearfix nav-menu-drop">
+                    	<li >
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico23 vm"></span>	
+                                <span class="dib vm hover-text">持有者结构</span>	
+                            </a>
+                        </li>
+                        <li >
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico24 vm"></span>	
+                                <span class="dib vm hover-text">规模份额及变动</span>	
+                            </a>
+                        </li>
+                       
+                    </ul>
+
+                </div>
+                <div class="nav-item ">
+                    <div class="nav-tit-menu f14 ">
+                        <span class="dib vm nav-tit-shap"><i class="dib ico tit-shap"></i></span>
+                        <span class="dib vm hover-text">财务报表</span>
+                    </div>
+                    <ul class="clearfix nav-menu-drop">
+                    	<li >
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico25 vm"></span>	
+                                <span class="dib vm hover-text">财务指标</span>	
+                            </a>
+                        </li>
+                        <li >
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico26 vm"></span>	
+                                <span class="dib vm hover-text">收入明细</span>	
+                            </a>
+                        </li>
+                        <li >
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico27 vm"></span>	
+                                <span class="dib vm hover-text">支出明细</span>	
+                            </a>
+                        </li>
+                        <li >
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico28 vm"></span>	
+                                <span class="dib vm hover-text">资产负债表</span>	
+                            </a>
+                        </li>
+                        <li >
+                        	<a class="db" href="#" target="_blank">
+                            	<span class="dib ico nav-drop-xx-ico29 vm"></span>	
+                                <span class="dib vm hover-text">利润分配表</span>	
+                            </a>
+                        </li>
+                       
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="nav-hover-detail">
+    	<span class="dib pa ico nav-hover-shap"></span>
+    	<div class="nav-hover-detail-con f14">
+        	
+        </div>
+    </div>
+    <!--左边以及导航 end！-->
+    
+    <!--页面内容部分 begin-->
+    <div class="main-con">
+    	
+        <div class="main-bd">
+        	<div class="main-sub ">
+            	<!--开始定义内容部分 begin-->
+                <div class=" main-tb-top">
+                	<div class="position  mt10">
+                        <a href="">首页</a><span class="fb f14">></span><em>最新净值查询</em>
+                    </div>
+                </div>
+                    
+           		<!--页数 begin-->
+               <!-- <div class="page-wrap scroll-mar tc">
+                    <div class="page-box bc clearfix ">
+                        <div class="page fl"> 
+                            <a class="page-prev" href="">上一页</a>
+                            <span class="page-now">1</span>
+                            <a href="">2</a>
+                            <a href="">3</a>
+                            <span>...</span>
+                            <a href="">199</a>
+                            <a href="">200</a>
+                            <a class="page-next" href="">下一页</a>
+                            
+                        </div>
+                        <div class="page-go fl ml10 clearfix">
+                            <span class="page-mar fl">转到</span>
+                            <input value="" class="page-text  fl" type="text">
+                            <span class="fl ml5">页</span>
+                            <a class="art-btn page-btn dib fl fb f18" href="javascript:;"><i class="dib ico go-ico"></i></a>
+                            
+                        </div>
+                        <a class="page-all fr" href="javascript:;">查看全部</a>
+                    </div>
+                    
+                </div>-->
+            	<!--页数 end！-->
+            
+            
+            	<!--开始定义内容部分 end!-->
+            </div>
+        	
+        
+        
+        </div>
+       
+        <div class="footer scroll-mar mt30">
+            <div class="tc footer-list">
+                <a href="http://www.ooteco.com/" target="_blank">关于我们</a>
+                <a href="http://www.ooteco.com/htm/aboutUs.htm" target="_blank">公司简介</a>
+                <a href="http://www.ooteco.com/htm/contactUs.htm" target="_blank">联系我们</a>
+                <a class="f-code" href="javascript:;">
+                    微信服务号
+                    <img class="f-bib-code" src="http://static.img.jijinrumen.net/funds/images/f-big-code.png" >
+                </a>
+            
+            </div>
+            <p class="mt10 footer-tips">
+                风险提示：所有投资都有风险，任何证券或金融产品的历史数据都不能保证其未来表现。投资者应仔细阅读理财产品的法律文件，了解产品风险和收益特征（包括系统性风险和特定产品所特有的投资风险等）。投资者应根据自身资产状况、风险承受能力选择适合自己的理财产品。自选基提供的宣传推介材料仅供投资者参考，不构成自选基的任何推荐或投资建议。投资者应审慎决策、独立承担风险。	
+            </p>
+            <p class="mt10 footer-copy">
+                深圳前海无限科技有限公司 版权所有 粤ICP备15038093号
+            </p>
+        
+        </div>
+    	
+    </div>
+    <!--页面内容部分 end!-->
+
+</div>
+<!--主题部分-->
+<!--弹框-->
+<div class="opc-bg"></div>
+<div class="pub-compare-box">
+	<a class="close-compare-btn f14" href="javascript:;">知道了</a>
+</div>
+<div class="pub-compare-max">
+	<a class="close-compare-max f14" href="javascript:;">知道了</a>
+</div>
+<!--弹框-->
+
+<script type="text/javascript" src="js/laydate/laydate.js"></script>  
+<script type="text/javascript" src="js/main1.js"></script>
+</body>
+</html>

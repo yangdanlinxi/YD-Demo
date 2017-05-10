@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.container{
+			width: 300px;
+			height: 200px;
+			position: relative;
+			margin: 100px auto;
+			perspective: 800px;
+			transform-style: preserve-3d;
+		}
+
+		.left{
+			width: 150px;
+			height: 200px;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+		.right{
+
+			width: 150px;
+			height: 200px;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+		.flip{
+			width: 150px;
+			height: 200px;
+			position: absolute;
+			right: 0;
+			top: 0;
+			transform-origin: left center;
+			transform-style: preserve-3d;
+		}
+
+		.front,.back{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+		.front{
+			z-index: 100;
+			backface-visibility: hidden;
+		}
+
+		.back{
+			z-index: 10;
+			transform: scale(-1,1)
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="left"></div>
+		<div class="right"></div>
+		<div class="flip">
+			<div class="front"></div>
+			<div class="back"></div>
+		</div>
+	</div>
+	<script>
+		var oLeft = document.querySelector('.left');
+		var oRight = document.querySelector('.right');
+		var oFront = document.querySelector('.front');
+		var oBack = document.querySelector('.back');
+		var oFlip = document.querySelector('.flip');
+
+		var currentIndex = 0;
+
+		oLeft.style.backgroundImage = `url(../img/book0.jpg)`;
+
+		oRight.style.backgroundImage = `url(../img/book1.jpg)`
+		oRight.style.backgroundPosition = `-150px 0`;
+
+		oFront.style.backgroundImage = `url(../img/book0.jpg)`;
+		oFront.style.backgroundPosition = `-150px 0`;
+
+		oBack.style.backgroundImage = `url(../img/book1.jpg)`
+
+
+		window.onclick = function(){
+			oFlip.style.transform = `rotateY(-180deg)`;
+			oFlip.style.transition = `1s`;
+		}
+
+		oFlip.addEventListener('transitionend',function(){
+
+			currentIndex++;
+
+			oLeft.style.backgroundImage = `url(../img/book${currentIndex%4}.jpg)`;
+			oRight.style.backgroundImage = `url(../img/book${(currentIndex+1)%4}.jpg)`;
+			oFront.style.backgroundImage = `url(../img/book${currentIndex%4}.jpg)`;
+			oBack.style.backgroundImage = `url(../img/book${(currentIndex+1)%4}.jpg)`;
+
+			oFlip.style.transform = ``;
+			oFlip.style.transition = ``;
+		},false)
+	</script>
+</body>
+</html>

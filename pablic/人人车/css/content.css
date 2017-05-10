@@ -1,0 +1,277 @@
+.content{
+	width:100%;
+	padding:30px 0;
+}
+.content-target{
+	height:255px;
+	padding:30px 0;
+	background:#f2f2f3;
+}
+.content-target .cont-1{
+	width:1190px;
+	height:254px;
+	margin:0 auto;
+}
+.cont-1>li{
+	float:left;
+	width:230px;
+	height:256px;
+	margin-right:20px;
+}
+.cont-1 li img{
+	width:100%;
+	height:100%;
+}
+.cont-1 .cont_last{
+	width:420px;
+	height:256px;
+	padding-left:20px;
+	background:#fff;
+	margin-right: 0;
+}
+.cont_l_1{
+	margin-top: 24px;
+	margin-bottom: 8px;
+}
+.cont_l_1 p{
+	float:left;
+	font-size:20px;
+}
+.cont_l_1 p b{
+	background: url(../img/msg.png) no-repeat;
+	display: inline-block;
+	width: 37px;
+	height: 18px;
+}
+.cont_l_1 span{
+	float:right;
+	margin-right:21px;
+}
+.cont_l_2 li{
+	height:33px;
+	font-size:12px;
+	line-height:33px;
+	margin-right:0;
+}
+.cont_l_2 .cont_left{
+	float:left;
+	width: 290px;
+}
+.cont_l_2 .cont_left li{
+	padding-left:12px; 
+	background: url(../img/dd.png) no-repeat 0 center;
+}
+.cont_l_2 .cont_right{
+	float:right;
+}
+.cont_l_2 .cont_right li{
+	width: 85px;
+}
+.cont_r_1 {
+	background: url(../img/cont-5.png) no-repeat 40px center;
+}
+.cont_r_2 {
+	background: url(../img/cont-6.png) no-repeat 40px center;
+}
+.cont_r_3 {
+	background: url(../img/cont-7.png) no-repeat 40px center;
+}
+.cont_l_3{
+	height: 38px;
+	margin-top:11px;
+}
+.cont_l_3 li{
+	width: 98px;
+	text-align: center;
+	line-height: 38px;
+	float:left;
+	font-size:14px;
+	border:1px solid #ddd;
+}
+.cont_l_3 li:hover{
+	background:yellow;
+}
+.cont_l_3 li a{
+	color:#000;
+}
+.cont-2{
+	border-bottom: 30px solid #f2f2f2;
+}
+.cont-2-t{
+	width: 989px;
+	margin:0 auto;
+	margin-bottom: 25px;
+}
+.cont-2-t li{
+	float: left;
+	width: 195px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	font-style: 20px;
+	font-weight: bold;
+	border:1px solid #ddd;
+}
+.cont-2-c{	
+	width: 1186px;
+	margin:0 auto;
+}
+.cont-2-c li{
+	float:left;
+	width: 286px;
+	margin-right: 14px;
+	position:relative;
+	margin-bottom: 8px;
+}
+.cont-2-c li.cont_c_4{
+	margin-right: 0;
+}
+.cont-2-c li.cont_c_8{
+	margin-right: 0;
+}
+.cont-2-c .cont-2-div{
+	margin: 24px 9px;
+}
+.cont-2-div h5{
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+.cont-2-div p{
+	font-size: 12px;
+	color:#999;
+
+}
+.cont-2-div p span{
+	color:#fff;
+	width: 30px;
+	height: 17px;
+	text-align: center;
+	line-height: 17px;
+	background:#ff6800; 
+	display: inline-block;
+	margin-left: 5px;
+}
+.cont-2-div h4 span{
+	font-size: 24px;
+	color:#fd521d;
+	height: 35px;
+	font-weight: bold;
+	line-height: 35px;
+	margin-right: 5px;
+	vertical-align: sub;
+}
+.cont-2-div h4{
+	font-size: 12px;
+	color:#fd521d;
+	display: inline-block;
+	height: 35px;
+}
+.cont-2-4{
+	color:#999;
+	font-size:12x;
+}
+.cont-2-5{
+	width: 33px;
+	height: 23px;
+	color:#fd521d;
+	line-height: 23px;
+	padding-left: 26px;
+	border:1px solid #fd521d;
+	position: absolute;
+	bottom: 28px;
+	right: 0;
+	background: url(../img/mokey2.png) no-repeat 6px center;
+}
+.cont-2-b{
+	width: 188px;
+	height: 46px;
+	text-align: center;
+	line-height: 46px;
+	border:1px solid #fd521d;
+	margin:0 auto;
+	margin-top: 16px;
+	margin-bottom: 30px;
+}
+.cont-2-b a{
+	color:#fd521d;
+}
+.cont-3{
+	width:1190px;
+	margin:0 auto;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+.cont-3-l{
+	float:left;
+	width: 800px;
+}
+.cont-3-1{
+	margin-bottom: 30px;
+}
+
+.cont-3-1 h3{
+	float:left;
+	font-size:24px;
+}
+.cont-3-1 h3 b{
+	font-size:10px;
+	color:#666;
+	margin-left: 9px;
+
+}
+.cont-3-1 span{
+	float:right;	
+	width: 87px;
+	height: 23px;
+	margin-right: 50px;
+	background: url(../img/tab.png) no-repeat 6px center;
+}
+.cont-3-l{
+	float:left;
+}
+.cont-3-2{
+	width:800px;
+}
+.cont-3-2 li{
+	float:left;
+}
+.cont-li img{
+	float:left;
+}
+.cont-li{
+	margin-right: 50px;
+}
+.cont-3-3 {
+	float:left;
+	width:160px;
+	margin-left: 10px;
+}
+.cont-3-3 h6{
+	width:160px;
+	height: 20px;
+	font-size:14px;
+	line-height: 20px;
+	margin-bottom: 30px;
+}
+.cont-3-3 p{
+	width:160px;
+	height: 22px;
+	font-size:10px;
+	color:#999;
+	line-height: 22px;
+}
+.cont-3-r{
+
+	padding-right: 30px;
+}
+.cont-3-r h4{
+	font-size:24px;
+	margin-bottom: 21px;
+}
+.cont-r-1 li{
+	height:28px;
+	font-size:14px;
+	color:#222;
+	line-height: 39px;
+	background: url(../img/dd.png) no-repeat 0 center;
+}

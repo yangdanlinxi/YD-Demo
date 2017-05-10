@@ -1,0 +1,21 @@
+<MKM version="2.0" imageFileUrl="file:///D:/Workspace/os/kx288/Untitled-1.psd">
+  <Marks>
+    <LengthMark direction="3" color="16711680" length="677" x="382" y="96"/>
+    <LengthMark direction="3" color="16711680" length="1" x="492" y="180"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="14477036" offsetX="25" offsetY="10" x="558" y="180"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="14477036" offsetX="25" offsetY="10" x="702" y="180"/>
+    <LengthMark direction="3" color="16711680" length="676" x="90" y="99"/>
+    <LengthMark direction="3" color="16711680" length="676" x="172" y="97"/>
+    <LengthMark direction="3" color="16711680" length="672" x="266" y="96"/>
+    <LengthMark direction="3" color="16711680" length="675" x="522" y="93"/>
+    <LengthMark direction="3" color="16711680" length="665" x="672" y="94"/>
+    <LengthMark direction="3" color="16711680" length="669" x="810" y="97"/>
+    <LengthMark direction="3" color="16711680" length="665" x="1338" y="103"/>
+    <LengthMark direction="3" color="16711680" length="662" x="1444" y="101"/>
+    <LengthMark direction="12" color="16711680" length="61" x="30" y="113"/>
+    <LengthMark direction="12" color="16711680" length="76" x="94" y="167"/>
+    <LengthMark direction="12" color="16711680" length="84" x="182" y="111"/>
+    <LengthMark direction="12" color="16711680" length="139" x="383" y="114"/>
+    <LengthMark direction="12" color="16711680" length="96" x="1348" y="124"/>
+  </Marks>
+</MKM>

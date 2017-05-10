@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智能社 - www.zhinengshe.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #box {
+            width: 720px;
+            height: 400px;
+            margin: 100px auto;
+            overflow: hidden;
+            position: relative;
+        }
+        #box ul {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        #box ul li {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            filter: alpha(opacity:0);
+        }
+        #box ul li.on {
+            opacity: 1;
+            filter: alpha(opacity:100);
+        }
+        #box ul li img {
+            width: 720px;
+            height: 400px;
+        }
+        #box ol {
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+        }
+        #box ol li {
+            width: 20px;
+            height: 20px;
+            background: yellow;
+            color: #000;
+            float: left;
+            margin-right: 10px;
+            line-height: 20px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        #box ol li.active {
+            background: red;
+        }
+    </style>
+    <script src="../js/move_all.js"></script>
+    <script>
+        window.onload = function() {
+            var oBox = document.getElementById('box');
+            var oUl = oBox.children[0];
+            var oOl = oBox.children[1];
+            var aLi = oUl.children;
+            var aBtn = oOl.children;
+            for (var i = 0; i < aBtn.length; i++) {
+                aBtn[i].index = i;
+                aBtn[i].onclick = function() {
+                    for (var i = 0; i < aBtn.length; i++) {
+                        aBtn[i].className = '';
+                        move(aLi[i],{opacity:0},{
+                            duration: 1500,
+                            easing: 'linear'
+                        });
+                    }
+                    this.className = 'active';
+                    move(aLi[this.index],{opacity:1},{
+                        duration: 1500,
+                        easing: 'linear'
+                    });
+                };
+            }
+        };
+    </script>
+</head>
+<body>
+    <div id="box">
+        <ul>
+            <li class="on"><img src="../img/run1.jpg" alt=""></li>
+            <li><img src="../img/run2.jpg" alt=""></li>
+            <li><img src="../img/run3.jpg" alt=""></li>
+            <li><img src="../img/run4.jpg" alt=""></li>
+            <li><img src="../img/run5.jpg" alt=""></li>
+        </ul>
+        <ol>
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ol>
+    </div>
+</body>
+</html>

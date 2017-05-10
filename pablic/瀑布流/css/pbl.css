@@ -1,0 +1,14 @@
+ #box {
+    width: 966px;
+    margin: 10px auto;
+}
+#box ul {
+    width: 300px;
+    float: left;
+    border: 1px solid #000;
+    margin: 10px;
+}
+#box ul li {
+    width: 280px;
+    margin: 10px;
+}

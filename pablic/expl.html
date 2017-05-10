@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.container{
+			width: 800px;
+			height: 600px;
+			margin: 0 auto;
+			perspective: 1200px;
+			transform-style: preserve-3d;
+		}
+
+		.block{
+			width: 100px;
+			height: 100px;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div class="container"></div>
+	<script>
+		var oContainer = document.querySelector('div');
+
+		var rows = 6;
+		var cols = 8;
+
+		var currentIndex = 0;
+
+		var bReady = true;
+
+		oContainer.style.backgroundImage = `url(../img/explode1.jpg)`;
+
+		for( var row = 0; row < rows;row++ ){
+			for( var col = 0; col < cols; col++ ){
+				var oDiv = document.createElement('div');
+						oDiv.classList.add('block');
+
+				oDiv.style.backgroundImage = `url(../img/explode0.jpg)`;
+				oDiv.style.backgroundPosition = `${-col*100}px ${-row*100}px`;
+
+				oContainer.appendChild(oDiv);
+			}
+		}
+
+		var aBlock = document.querySelectorAll('.block');
+
+		window.onclick = function(){
+			if( !bReady ) return;
+
+			bReady = false;
+
+			aBlock.forEach(function(oBlock){
+
+				oBlock.style.transition = `.4s ${rnd(100,300)}ms`
+
+				oBlock.style.opacity = 0;
+				oBlock.style.transform = `translateZ(800px) rotateX(${rndSign()*rnd(60,180)}deg) rotateY(${rndSign()*rnd(60,180)}deg)`
+
+			})
+
+
+			setTimeout(function(){
+				currentIndex++;
+
+				aBlock.forEach(function(oBlock){
+					oBlock.style.transition = ``;
+					oBlock.style.opacity = 1;
+					oBlock.style.transform = ``;
+
+					oBlock.style.backgroundImage = `url(../img/explode${currentIndex%4}.jpg)`
+				})
+
+				oContainer.style.backgroundImage = `url(../img/explode${(currentIndex+1)%4}.jpg)`
+
+				bReady = true
+			},700)
+		}
+
+		function rnd(n,m){
+			return parseInt(Math.random()*(m-n)+n);
+		}
+
+		function rndSign(){
+			return Math.random() > 0.5 ? -1 : 1
+		}
+	</script>
+</body>
+</html>

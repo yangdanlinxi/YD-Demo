@@ -1,0 +1,50 @@
+.manager .explain-sec {
+  height: 292px;
+}
+
+.manager-desc {
+  margin-bottom: 17px;
+}
+.manager-desc h4{
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 5px;
+}
+.manager-desc span{
+  font-size: 12px;
+}
+.manager-detail .manager-img {
+  float: left;
+  margin-right: 7px;
+}
+.manager-detail table {
+  float: left;
+  width:calc(100% - 110px);
+}
+.manager-detail td {
+  height: 23px;
+}
+.manager-detail .manager-col {
+  width: 22.5%;
+}
+.manager-img {
+  width: 100px;
+}
+.company table {
+  width: 100%;
+}
+.company td {
+  height: 30px;
+}
+.company .col01{
+  width:13%;
+}
+.company .col02{
+  width:37%;
+}
+.company .col03{
+  width:15%;
+}
+.company .col04{
+  width:35%;
+}

@@ -1,0 +1,163 @@
+/*--------------------------------------------------
+    [2. Header - Navbar]
+----------------------------------------------------*/
+
+/*Navbar*/
+.header {
+  z-index: 99;
+  background: #fff;
+  position: relative;
+}
+
+/*Navbar Menu*/
+.header .navbar-nav > li > a {
+  line-height: 60px;
+  height: 60px;
+  font-size: 20px;
+  padding-top: 0;
+  color: #F49236;
+  /*font-weight: 400;*/
+}
+
+.header .navbar-nav > .active > a {
+  color: #F49236;
+}
+
+@media (min-width: 992px) {
+  .header .navbar-nav {
+    float: right;
+  }
+}
+
+@media (min-width: 992px) {
+  /*Navbar Collapse*/
+  .header .navbar-collapse {
+    padding: 0;
+  }
+
+  /*Navbar*/
+  .header .container > .navbar-header,
+  .header .container-fluid > .navbar-header,
+  .header .container > .navbar-collapse,
+  .header .container-fluid > .navbar-collapse {
+    margin-bottom: -10px;
+  }
+
+  .header .navbar-nav {
+    position: relative;
+  }
+
+  .header .navbar-nav > li > a {
+    position: relative;
+  }
+
+  .header .navbar-nav > li > a,
+  .header .navbar-nav > li > a:focus {
+    border-bottom: solid 2px transparent;
+  }
+
+  .header .navbar-nav > li > a:hover,
+  .header .navbar-nav > .active > a {
+    position: relative;
+    border-bottom: solid 2px #F49236;
+  }
+
+  .header .navbar-nav > li > a,
+  .header .navbar-nav > li > a:hover,
+  .header .navbar-nav > li > a:focus,
+  .header .navbar-nav > .active > a,
+  .header .navbar-nav > .active > a:hover,
+  .header .navbar-nav > .active > a:focus {
+    background: none;
+  }
+
+  .header .navbar-nav > .open > a,
+  .header .navbar-nav > .open > a:hover,
+  .header .navbar-nav > .open > a:focus {
+    color: #F49236;
+  }
+
+  .header .navbar-nav > li:hover > a {
+    color: #F49236;
+  }
+}
+/*--------------------------------------------------
+    [8. Header - Fixed]
+----------------------------------------------------*/
+
+/*Header*/
+.header-fixed .header {
+  background: red;
+  height: auto;
+}
+
+.header-fixed .header.header-sticky {
+  margin-top: 0;
+  transition: all 0.2s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/*z-index fixed in v1.9 for layer slider arrows*/
+.header-fixed .header.header-fixed-shrink {
+  z-index: 10100;
+  border-bottom: none;
+  box-shadow: 0 0 3px #bbb;
+  background: rgba(255, 255, 255, 0.96);
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  /*Header*/
+  .header-fixed .header.header-sticky,
+  .header-fixed .header.header-fixed-shrink {
+    position: relative;
+  }
+}
+
+@media (min-width: 992px) {
+  .header-fixed .header.header-fixed-shrink {
+    margin-top: -35px;
+  }
+
+  .header-fixed .header.header-fixed-shrink > .container {
+    margin-bottom: -46px;
+  }
+
+  /*Logo*/
+  .header-fixed .header.header-fixed-shrink .logo img {
+    max-width: 105px;
+    margin: 45px 0 -4px;
+  }
+
+  /*Navbar Nav*/
+  .header-fixed .header.header-fixed-shrink .navbar-nav > li > a {
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+
+  .header-fixed .header.header-fixed-shrink .navbar-nav > li > a:hover,
+  .header-fixed .header.header-fixed-shrink .navbar-nav > .active > a {
+    border-bottom: none;
+  }
+
+  /*Dropdown*/
+  .header-fixed .header.header-fixed-shrink .dropdown > a:after {
+    top: 20px;
+  }
+
+  /*Search*/
+  .header-fixed .header.header-fixed-shrink .nav > li > .search {
+    color: #777;
+    padding: 20px 0 22px;
+    background: inherit;
+    border-bottom: none;
+  }
+
+  .header-fixed .header.header-fixed-shrink .nav .search-open {
+    top: 60px;
+  }
+}
+

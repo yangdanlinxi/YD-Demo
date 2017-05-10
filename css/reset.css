@@ -1,0 +1,10 @@
+*{ margin:0; padding:0;}
+ul li,ol li{ list-style:none;}
+a{ text-decoration:none;}
+img{ vertical-align:top;border:0 none;}
+b,strong,h1,h2,h3,h4,h5,h6{ font-weight:normal;}
+i,em{ font-style:normal;}
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+input{border:0 none;/*outline:none;*/}
+textarea{border:0 none;resize:none;}
